@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 jobs:
   pipline:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [ 16.x ]
@@ -26,6 +26,6 @@ jobs:
       - name: linting css
         run: npm run lint:scss
       - name: unit testing
-        run: npm run test:ui
+        run: npm run test:ui:ci
 
 
