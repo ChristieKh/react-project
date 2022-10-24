@@ -44,6 +44,7 @@ module.exports = {
 			"after": true
 		}],
 		"react/display-name": "off",
+		"@typescript-eslint/no-var-requires": "off",
 		"rest-spread-spacing": ["error", "never"],
 		"i18next/no-literal-string": ["error", {
 			markupOnly: true,
