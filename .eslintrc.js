@@ -5,7 +5,15 @@ module.exports = {
 		"node": true,
 	},
 
-	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "plugin:import/recommended", "plugin:i18next/recommended", "plugin:storybook/recommended"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/recommended",
+		"plugin:i18next/recommended",
+		"plugin:storybook/recommended",
+		"plugin:react-hooks/recommended"
+	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaVersion": "latest",
@@ -50,6 +58,8 @@ module.exports = {
 			markupOnly: true,
 			ignoreAttribute: ["data-testid"]
 		}],
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn"
 	},
 	"settings": {
 		"react": {
